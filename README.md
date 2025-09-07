@@ -1,24 +1,37 @@
-# algo-efficiency-mini-project-shashanktiwari
 # Algorithm Efficiency Mini Project
 
 ## 📌 Overview
-This project analyzes and visualizes the efficiency of recursive and iterative algorithms.  
-We compare execution time and space usage of common algorithms and visualize their behavior.
+This repository contains my **Lab Assignment 1** for *Design & Analysis of Algorithms*.  
+The project implements multiple algorithms, measures their performance (time & memory), and compares them with theoretical complexities.  
 
-## 🎯 Objectives
-- Implement classic recursive and iterative algorithms
-- Measure time and memory usage
-- Visualize performance with plots
-- Compare theoretical vs observed results
+All experiments are implemented and executed using **Google Colab (Python)**.
 
-## 🛠️ Algorithms Implemented
-- Fibonacci (Naïve Recursive, Dynamic Programming)
-- Sorting: Merge Sort, Quick Sort, Insertion Sort, Bubble Sort, Selection Sort
-- Binary Search
+---
 
-## 📊 Profiling & Visualization
-- `time` module for execution time
-- `memory_profiler` for space analysis
-- `matplotlib` for plots
+## 🛠️ Implemented Algorithms
+### Fibonacci Numbers
+- **Naive Recursive Fibonacci**
+- **Dynamic Programming Fibonacci (Iterative)**
 
-## 📂 Repo Structure
+### Sorting Algorithms
+- **Merge Sort**
+- **Quick Sort** (random pivot)
+- **Insertion Sort**
+- **Bubble Sort**
+- **Selection Sort**
+
+### Searching Algorithm
+- **Binary Search**
+
+---
+
+## 📊 Profiling & Experiments
+For each algorithm:
+- **Execution Time** measured using `time.perf_counter`
+- **Memory Usage** measured using `tracemalloc`
+- **Recursion Depth** tracked for recursive algorithms
+- **Input Variations** tested with:
+  - Random arrays
+  - Sorted arrays
+  - Reversed arrays
+- **Plots** generated using `matplotlib` (Time vs Input Size)
